@@ -20,7 +20,7 @@
 html, body{
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(90deg, var(--cinza), var(--cinzad));
+    background-image: linear-gradient(180deg, var(--cinza), var(--cinzad));
 }
 
 main{
@@ -38,4 +38,34 @@ main{
     background-color: blue;
     background: url(img/mac.png);
     background-size: cover;
+}
+
+#frame{
+    position: relative;
+    top: 49px;
+    left: 94px;
+    height: 320px;
+    width: 500px;
+}
+
+#links{
+    padding-top: 100px;
+    text-align: center;
+}
+
+#links img{
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.315);
+    box-sizing: border-box;
+    transition: transform .3s;
+    transition: box-shadow .3s ease-out;
+}
+
+#links img:hover{
+    transform: translate(0px, 5px);
+    box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.315);
+    transition: transform .3s;
+    transition: box-shadow .1s ease-in;
 }
